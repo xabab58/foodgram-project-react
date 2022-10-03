@@ -1,6 +1,4 @@
 # Foodgram
-Исправить
-![workflow](https://github.com/Xewus/Foodgram/actions/workflows/main.yml/badge.svg)
 
 ***
 
@@ -13,7 +11,6 @@
 - Postgres
 
 
-Исправить ## http://foodgram.gq
 
 Здесь вы можете поделиться рецептами блюд, добавить их в избранное и отобразить список покупок для приготовления ваших любимых блюд.
 Для сохранения порядка - только администраторам разрешено создавать теги и ингредиенты.
@@ -74,12 +71,3 @@ sudo docker-compose up -d
 Если вам нужно, вы можете использовать список ингредиентов, предлагаемых нами, для написания
 рецептов(/data/ingredients.json).
 Загрузите его в базу данных с помощью следующей команды 
-
-```
-Исправить
-sudo docker exec -it foodgram_backend_1 python manage.py loaddata data/dump.json
-```
-
-
-### *Исходники:*
-[YandexPracticum](https://github.com/yandex-praktikum/foodgram-project-react)
