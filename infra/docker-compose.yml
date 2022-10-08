@@ -3,7 +3,7 @@ version: '3.3'
 services:
 
   frontend:
-     image: xabab/foodgram_front:latest
+    image: xabab/foodgram_front:latest
 #    Раскоментить если локально.
 #    build:
 #      context: ../frontend

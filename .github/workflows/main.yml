@@ -118,7 +118,7 @@ jobs:
         script: |
           cd projects/foodgram/
           touch .env
-          echo DEBUG=${{ secrets.DEBUG }} >> .env
+          echo DEBUG=${{ secrets.DEBUG }} > .env
           echo SECRET_KEY=${{ secrets.SECRET_KEY }} >> .env
           echo ALLOWED_HOSTS=${{ secrets.ALLOWED_HOSTS }} >> .env
           echo CSRF_TRUSTED_ORIGINS=${{ secrets.CSRF_TRUSTED_ORIGINS }} >> .env
