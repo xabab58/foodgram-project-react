@@ -41,6 +41,7 @@ jobs:
         host: ${{ secrets.HOST_IP }}
         username: ${{ secrets.HOST_USER }}
         key: ${{ secrets.SSH_KEY }}
+        passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           cd projects
           sudo rm -rf foodgram
@@ -71,6 +72,7 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.DOCKER_PASS }}
+
 
     - name: Push "foodgram/backend" to DockerHub
       uses: docker/build-push-action@v2
