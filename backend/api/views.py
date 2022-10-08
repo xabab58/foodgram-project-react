@@ -38,21 +38,21 @@ class UserViewSet(DjoserUserViewSet, AddDelViewMixin):
     add_serializer = UserSubscribeSerializer
 
     @action(methods=conf.ACTION_METHODS, detail=True)
-    def subscribe(self, request, id):
+    def subscribe(self, request, idt):
         """Создаёт/удалет связь между пользователями.
 
         Вызов метода через url: */user/<int:id>/subscribe/.
 
         Args:
             request (Request): Не используется.
-            id (int, str):
+            idt (int, str):
                 id пользователя, на которого желает подписаться
                 или отписаться запращивающий пользователь.
 
         Returns:
             Responce: Статус подтверждающий/отклоняющий действие.
         """
-        return self.add_del_obj(id, conf.SUBSCRIBE_M2M)
+        return self.add_del_obj(idt, conf.SUBSCRIBE_M2M)
 
     @action(methods=('get',), detail=False)
     def subscriptions(self, request):

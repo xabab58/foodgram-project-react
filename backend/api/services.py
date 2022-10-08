@@ -92,6 +92,6 @@ def is_hex_color(value):
 
 # Словарь для сопостановления латинской и русской стандартных раскладок.
 incorrect_layout = str.maketrans(
-    'qwertyuiop[]asdfghjkl;\'zxcvbnm,./',
+    "qwertyuiop[]asdfghjkl;\'zxcvbnm,./",
     'йцукенгшщзхъфывапролджэячсмитьбю.'
 )
