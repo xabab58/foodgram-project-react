@@ -50,12 +50,13 @@ jobs:
     - name: Copy files
       uses: garygrossgarten/github-action-scp@release
       with:
-          local: infra/
-          remote: /home/${{ secrets.HOST_USER }}/projects/foodgram/
           host: ${{ secrets.HOST_IP }}
           username: ${{ secrets.HOST_USER }}
           privateKey: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
+          local: infra/
+          remote: /home/${{ secrets.HOST_USER }}/projects/foodgram/
+
 
   build_push_backend_to_DockerHub:
     name: Building back image and pushing it to Docker Hub
