@@ -1,5 +1,7 @@
 # Foodgram
 
+![workflow](https://github.com/xabab58/foodgram-project-react/actions/workflows/main.yml/badge.svg)
+
 ***
 
 ## Tecnhologies:
